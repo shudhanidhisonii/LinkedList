@@ -1,0 +1,98 @@
+body {
+    background-image: url("Blue Modern Futuristic Desktop Wallpaper (4).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav_bar {
+    height: 50px;
+    background-color: rgba(51, 193, 193, 0.149); /* Use rgba for transparency */
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    padding: 0 20px; /* Optional: add some padding */
+    column-gap: 20px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    color: aliceblue;
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the list items */
+    align-items: center;
+    column-gap: 50px;
+    flex-grow: 1; /* Allow ul to take available space */
+    margin-right: 200px; /* Remove default margin */
+}
+
+.logo img {
+    margin-right: auto; /* Pushes the logo to the left */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   
+}
+
+.login-btn {
+    margin-left: auto; /* Pushes the login button to the right */
+}
+
+.vis{
+    border: 1px solid rgba(51, 193, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+   font-size: 80px;
+   color: aliceblue;
+    height: 200px;
+    width: 800px;
+   background-color: rgba(51, 193, 193, 0.063);
+    margin: auto;
+    margin-top: 100px;
+}
+
+.optn_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.optn_list div{
+    height: 200px;
+    width: 300px;
+    color: white;
+    border: 0.1px solid rgba(51, 193, 193) ;
+    border-bottom: 3.5px solid rgba(51, 193, 193) ;
+    border-right:3.5px solid rgba(51, 193, 193) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family:arial;
+    border-radius: 20%;
+   
+}
+
+ #click {
+    color: white;
+    background-color: rgba(51, 193, 193, 0.149); 
+    border: 0.1px solid rgba(51, 193, 193) ;
+    font-size: 18px; 
+    padding: 15px 30px;
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-decoration: underline;">Singly Linked List Visualizer</h1>
+    <div id="container"></div>
+    <div class="btn">
+    <button onclick="insertAtBeginning()">Insert at Beginning</button>
+    <button onclick="insertAtEnd()">Insert at End</button>
+    <button onclick="insertAtPosition()">Insert at Position</button>
+    <button onclick="deleteFromBeginning()">Delete from Beginning</button>
+    <button onclick="deleteFromEnd()">Delete from End</button>
+    <button onclick="deleteAtPosition()">Delete at Position</button>
+    <button onclick="goBack()">Back</button></div>
+    <script src="index.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

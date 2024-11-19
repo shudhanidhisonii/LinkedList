@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("Blue Modern Futuristic Desktop Wallpaper (4).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+h1 {
+    color: white;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    height: 400px;
+    width: 1100px;
+    border: 2px solid  rgb(51, 193, 193);
+   padding: 20px;
+}
+
+.node {
+    border: 2px solid rgb(51, 193, 193);
+    border-radius: 8px;
+    padding: 10px;
+   
+    height: 50px;
+    width:50px;
+    margin: 0; /* Remove margin to eliminate gaps */
+    text-align: center;
+    position: relative;
+    color: white; /* Text color set to white */
+
+}
+
+.arrow {
+    width: 30px; /* Fixed width for the arrow */
+    height: 2px;
+    background-color: rgb(51, 193, 193);
+    position: relative;
+    margin: 0; /* Remove margins */
+}
+
+.arrow:after {
+    content: '';
+    position: absolute;
+    right: -5px; /* Slightly adjust to pull it outside */
+    top: 50%; /* Center the arrowhead vertically */
+    transform: translateY(-50%); /* Adjust to center vertically */
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid rgb(51, 193, 193); /* Arrowhead color */
+}
+
+/* To ensure no space between the arrow and node */
+.node + .arrow {
+    margin-left: 0; /* Ensure there's no extra space before the arrow */
+}
+
+.arrow:first-child {
+    margin-left: -10px; /* Adjust to ensure the arrow starts at the border */
+}
+
+.arrow:last-child {
+    margin-right: 0; /* Set to 0 to ensure it's flush with the node */
+}
+
+.btn{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    gap: 50px;
+}
+
+button{
+border-right: 2.5px solid rgb(51, 193, 193);
+border-bottom: 2.5px solid rgb(51, 193, 193);
+border-left: 0.5px solid rgb(51, 193, 193);
+border-top: 0.5px solid rgb(51, 193, 193);
+padding: 5px;
+border-radius: 50px;
+background-color:  rgb(51, 193, 193,13%);
+color: white;
+height: 50px;
+    width:100px
+}
